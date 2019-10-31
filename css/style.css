@@ -1,0 +1,101 @@
+.container{
+	max-width: 1200px;
+	width: 100%;
+	margin: 50px auto;
+	background: grey;
+}
+.wrapper{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	/*flex-wrap: wrap;*/
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 50px;
+}
+.box{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.box img{
+	width: 200px;
+}
+.icon{
+	display: none;
+}
+.navbar{
+	display: none;
+	background: aqua;
+	width: 200px;
+    height: 500px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.icon:hover .navbar{
+	display: block;
+}
+.fa-bars{
+	color: #fff;
+	font-size: 40px;
+}
+.fa-bars:hover{
+	color:blue;
+}
+@media screen and (max-width: 1024px){
+	.container{
+		background: red;
+		max-width: 900px;
+	}
+	.box img{
+	width: 150px;
+	}
+	.icon{
+		display: block;
+	}
+}
+@media screen and (max-width: 768px){
+	.container{
+		background: pink;
+		max-width: 600px;
+	}
+	.wrapper{
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+}
+@media screen and (max-width: 480px) {
+	.wrapper{
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.box {
+		margin-bottom: 20px;
+		font-size: 20px;
+	}
+}
